@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = 'javeloper2024-master-tests'
-include('lib')
+include('mutations')
