@@ -9,6 +9,7 @@ plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
     id 'jacoco'
+    id 'info.solidsoft.pitest' version '1.15.0'
 }
 
 repositories {
@@ -43,4 +44,12 @@ tasks.named('test') {
     testLogging {
         events "PASSED", "SKIPPED", "FAILED"
     }
+}
+
+pitest {
+    junit5PluginVersion = '1.2.0'
+    targetClasses = ['pl.edu.bogdan.mutations.*']
+    threads = 4
+    outputFormats = ['XML', 'HTML']
+    timestampedReports = false
 }

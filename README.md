@@ -15,3 +15,13 @@ $ ./gradlew mutations:clean mutations:test mutations:jacocoTestReport
 ```
 
 Report is generated in `mutations/build/reports/jacoco/test/html` directory.
+
+## Pitest
+
+I also added Pitest [gradle plugin](https://gradle-pitest-plugin.solidsoft.info/). When one runs the command:
+
+```shell
+$ ./gradlew mutations:pitest
+```
+
+the mutations are generated and tests are validated on mutations. One can read more about Pitest [here](https://pitest.org/).
