@@ -1,11 +1,10 @@
 package pl.edu.bogdan.pbt;
 
-import org.checkerframework.checker.units.qual.C;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTest {
+class CalculatorTests {
     @Test
     public void addingShouldWOrkCorrectly() {
         // given

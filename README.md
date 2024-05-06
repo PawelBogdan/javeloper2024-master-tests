@@ -35,7 +35,19 @@ I added scalacheck library to create two tests using pbt approach. Thanks to `or
 $ ./gradlew pbt-scala:clean pbt-scala:test
 ```
 
+More information can be found [here](https://www.baeldung.com/scala/scalacheck).
+
 # pbt-java
 
 Unfortunately JUnit library doesn't support pbt out of the box. However, there are several libraries which implements this approach. As in `pbt-scala` I created simple `Calculator` class with simple unit test.
 
+## jqwik
+
+I added examples using `jqwik` library. One can read more about that
+- [Original user guide](https://jqwik.net/docs/current/user-guide.html)
+- [Baeldung](https://www.baeldung.com/java-jqwik-property-based-testing)
+
+Thanks to changes I am introducing to `build.gradle` one can run tests using command:
+```shell
+$ ./gradlew pbt-java:clean pbt-java:test
+```
