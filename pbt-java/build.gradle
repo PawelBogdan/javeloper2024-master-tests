@@ -28,6 +28,8 @@ dependencies {
     implementation libs.guava
 
     testImplementation "net.jqwik:jqwik:1.8.4"
+
+    testImplementation 'io.vavr:vavr-test:0.10.4'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

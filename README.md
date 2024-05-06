@@ -51,3 +51,9 @@ Thanks to changes I am introducing to `build.gradle` one can run tests using com
 ```shell
 $ ./gradlew pbt-java:clean pbt-java:test
 ```
+
+## vavr
+
+`vavr` is pretty popular library which provides functional capabilities to Java programs. It also provides classes which can be used to implement pbt tests for `Calculator` class.
+
+You can check this [Baeldung](https://www.baeldung.com/vavr-property-testing) article as a starting point to this topic.
