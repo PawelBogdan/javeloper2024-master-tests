@@ -25,3 +25,7 @@ $ ./gradlew mutations:pitest
 ```
 
 the mutations are generated and tests are validated on mutations. One can read more about Pitest [here](https://pitest.org/).
+
+# pbt-scala
+
+As property-based-testing paradigm was created for functional languages. I'd like to present this testing approach for simple Scala library. I created pretty simple `Calculator` class with simple unit tests as a starter.
