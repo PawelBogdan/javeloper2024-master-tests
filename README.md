@@ -9,7 +9,6 @@ This module contains simple `Library` class with two unit tests. One can check t
 ## JaCoCo
 
 I added JaCoCo plugin - it allows to generate code coverage report. To generate it, run the following command
-
 ```shell
 $ ./gradlew mutations:clean mutations:test mutations:jacocoTestReport
 ```
@@ -19,7 +18,6 @@ Report is generated in `mutations/build/reports/jacoco/test/html` directory.
 ## Pitest
 
 I also added Pitest [gradle plugin](https://gradle-pitest-plugin.solidsoft.info/). When one runs the command:
-
 ```shell
 $ ./gradlew mutations:pitest
 ```
@@ -29,3 +27,10 @@ the mutations are generated and tests are validated on mutations. One can read m
 # pbt-scala
 
 As property-based-testing paradigm was created for functional languages. I'd like to present this testing approach for simple Scala library. I created pretty simple `Calculator` class with simple unit tests as a starter.
+
+## scalacheck
+
+I added scalacheck library to create two tests using pbt approach. Thanks to `org.scalatestplus:scalacheck-1-18_2.13` all tests (regular unit tests and pbt tests) can be executed at once using the following command:
+```shell
+$ ./gradlew pbt-scala:clean pbt-scala:test
+```
