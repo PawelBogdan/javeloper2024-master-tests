@@ -34,3 +34,8 @@ I added scalacheck library to create two tests using pbt approach. Thanks to `or
 ```shell
 $ ./gradlew pbt-scala:clean pbt-scala:test
 ```
+
+# pbt-java
+
+Unfortunately JUnit library doesn't support pbt out of the box. However, there are several libraries which implements this approach. As in `pbt-scala` I created simple `Calculator` class with simple unit test.
+

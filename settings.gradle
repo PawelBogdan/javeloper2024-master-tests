@@ -13,3 +13,4 @@ plugins {
 rootProject.name = 'javeloper2024-master-tests'
 include('mutations')
 include('pbt-scala')
+include('pbt-java')
